@@ -6,6 +6,8 @@ function average(data){
     return _.round(_.sum(data)/data.length);
 }
 
+
+
 export default (props) => {
     return (
         <div>
@@ -14,7 +16,7 @@ export default (props) => {
                 <SparklinesReferenceLine type="avg" />
             </Sparklines>
             <div>
-                {average(props.data)} {props.units}
+                Average: {average(props.data)} {props.units}
             </div>
         </div>
     );
