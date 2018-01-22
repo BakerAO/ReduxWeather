@@ -21,6 +21,10 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './',
+    disableHostCheck: true
   }
 };
+
+// Edit node_modules/webpack-dev-server/bin/webpack-dev-server.js
+// to change host in new Server
